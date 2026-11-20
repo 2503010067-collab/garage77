@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail & Laporan Inspeksi Mobil - Garage77</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="riyyan_header">
+        <div class="riyyan_nav_wrap">
+            <a href="index.html" class="riyyan_logo">GARAGE<span>77</span></a>
+            <button id="riyyan_menu_btn">&#9776;</button>
+            <ul id="riyyan_nav_list">
+                <li><a href="index.html" class="riyyan_nav_item">Beranda</a></li>
+                <li><a href="katalog.html" class="riyyan_nav_item">Stok Mobil</a></li>
+                <li><a href="detail.html" class="riyyan_nav_item riyyan_aktif">Detail Unit</a></li>
+                <li><a href="booking.html" class="riyyan_nav_item">Test Drive</a></li>
+                <li><a href="jual-mobil.html" class="riyyan_nav_item">Jual Mobil</a></li>
+                <li><a href="terjual.html" class="riyyan_nav_item">Terjual</a></li>
+                <li><a href="faq.html" class="riyyan_nav_item">Cara Beli & FAQ</a></li>
+                <li><a href="contact.html" class="riyyan_nav_item">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="riyyan_detail_container" class="riyyan_container">
+        <div class="riyyan_grid_2">
+            <div>
+                <img id="riyyan_det_foto" src="" alt="Foto Unit" class="riyyan_detail_img">
+                <div class="riyyan_gallery_tabs">
+                    <button class="riyyan_tab_btn riyyan_tab_aktif" data-foto="eksterior">Foto Eksterior</button>
+                    <button class="riyyan_tab_btn" data-foto="interior">Foto Interior</button>
+                    <button class="riyyan_tab_btn" data-foto="mesin">Ruang Mesin</button>
+                    <button class="riyyan_tab_btn" data-foto="minus">Detail Minus</button>
+                </div>
+                <p class="riyyan_meta">Pilih unit lain di halaman <a href="katalog.html" style="color: #111827; font-weight: 600;">Stok Mobil</a> untuk melihat detail unit lainnya.</p>
+            </div>
+
+            <div class="riyyan_form_box">
+                <span class="riyyan_badge">Laporan Inspeksi Garage77</span>
+                <h2 id="riyyan_det_nama" class="riyyan_card_title" style="font-size: 1.5rem;">-</h2>
+                <p id="riyyan_det_meta" class="riyyan_meta">-</p>
+                <p id="riyyan_det_harga" class="riyyan_price" style="font-size: 1.4rem;">-</p>
+
+                <h4 style="margin-top: 14px; color: #111827;">Hasil Pengecekan Teknis:</h4>
+                <p id="riyyan_det_inspeksi" class="riyyan_meta" style="color: #374151;">-</p>
+
+                <h4 style="margin-top: 14px; color: #111827;">Catatan Minus Pemakaian (Transparan):</h4>
+                <p id="riyyan_det_minus" class="riyyan_meta" style="color: #374151;">-</p>
+
+                <h4 style="margin-top: 14px; color: #111827;">Kelengkapan Dokumen & Pajak:</h4>
+                <ul id="riyyan_det_dokumen" class="riyyan_check_list"></ul>
+
+                <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px;">
+                    <a id="riyyan_btn_nego_wa" href="#" target="_blank" class="riyyan_btn">Nego Cash via WhatsApp</a>
+                    <button id="riyyan_btn_to_booking" class="riyyan_btn riyyan_btn_light">Jadwalkan Test Drive</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="riyyan_footer">
+        <p>&copy; 2026 <strong>Garage77</strong> — Jln. Manonjaya, Kab. Tasikmalaya | Riyyan Miftahurrohmat</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

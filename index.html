@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage77 - Showroom Mobil Bekas Tunai Tasikmalaya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="riyyan_header">
+        <div class="riyyan_nav_wrap">
+            <a href="index.html" class="riyyan_logo">GARAGE<span>77</span></a>
+            <button id="riyyan_menu_btn">&#9776;</button>
+            <ul id="riyyan_nav_list">
+                <li><a href="index.html" class="riyyan_nav_item riyyan_aktif">Beranda</a></li>
+                <li><a href="katalog.html" class="riyyan_nav_item">Stok Mobil</a></li>
+                <li><a href="detail.html" class="riyyan_nav_item">Detail Unit</a></li>
+                <li><a href="booking.html" class="riyyan_nav_item">Test Drive</a></li>
+                <li><a href="jual-mobil.html" class="riyyan_nav_item">Jual Mobil</a></li>
+                <li><a href="terjual.html" class="riyyan_nav_item">Terjual</a></li>
+                <li><a href="faq.html" class="riyyan_nav_item">Cara Beli & FAQ</a></li>
+                <li><a href="contact.html" class="riyyan_nav_item">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="riyyan_hero">
+        <h1 class="riyyan_hero_title">Jual Beli Mobil Bekas Tunai Tanpa Biaya Tersembunyi</h1>
+        <p class="riyyan_hero_desc">Spesialis transaksi cash langsung di Tasikmalaya. Harga transparan, dokumen BPKB & faktur lengkap di tempat, serta terbuka untuk pengecekan inspektor independen.</p>
+        <form id="riyyan_home_search_form" class="riyyan_search_box">
+            <input type="text" id="riyyan_home_keyword" class="riyyan_search_input" placeholder="Cari unit (contoh: Corolla, Swift, Civic, HR-V, Camry)...">
+            <button type="submit" class="riyyan_btn">Cari Mobil</button>
+        </form>
+    </section>
+
+    <main class="riyyan_container">
+        <h2 class="riyyan_section_title">Unit Pilihan Ready Stock</h2>
+        <p class="riyyan_section_sub">Unit terkurasi siap pakai dan siap negosiasi langsung di showroom Garage77.</p>
+
+        <div class="riyyan_grid_3">
+            <div class="riyyan_card">
+                <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&w=700&q=80" alt="Great Corolla 1995" class="riyyan_card_img">
+                <div class="riyyan_card_body">
+                    <div>
+                        <span class="riyyan_badge">Ready Stock</span>
+                        <h3 class="riyyan_card_title">Toyota Great Corolla 1.6 SEG 1995</h3>
+                        <p class="riyyan_meta">Manual • 185.000 km • Plat Z Pajak Hidup</p>
+                    </div>
+                    <div>
+                        <p class="riyyan_price">Rp 68.000.000</p>
+                        <button class="riyyan_btn" onclick="bukaDetailMobil('corolla95')">Cek Detail Unit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="riyyan_card">
+                <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=700&q=80" alt="HR-V Prestige" class="riyyan_card_img">
+                <div class="riyyan_card_body">
+                    <div>
+                        <span class="riyyan_badge">Ready Stock</span>
+                        <h3 class="riyyan_card_title">Honda HR-V 1.8 Prestige Sunroof 2016</h3>
+                        <p class="riyyan_meta">Automatic • 78.000 km • Tangan Pertama</p>
+                    </div>
+                    <div>
+                        <p class="riyyan_price">Rp 215.000.000</p>
+                        <button class="riyyan_btn" onclick="bukaDetailMobil('hrvprestige')">Cek Detail Unit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="riyyan_card">
+                <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=700&q=80" alt="Civic FB 2.0" class="riyyan_card_img">
+                <div class="riyyan_card_body">
+                    <div>
+                        <span class="riyyan_badge">Ready Stock</span>
+                        <h3 class="riyyan_card_title">Honda Civic FB 2.0 AT 2013</h3>
+                        <p class="riyyan_meta">Automatic • 104.000 km • Plat Z Pajak Hidup</p>
+                    </div>
+                    <div>
+                        <p class="riyyan_price">Rp 162.000.000</p>
+                        <button class="riyyan_btn" onclick="bukaDetailMobil('civicfb')">Cek Detail Unit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="katalog.html" class="riyyan_btn riyyan_btn_light">Lihat Semua 5 Stok Mobil &rarr;</a>
+        </div>
+
+        <br><br>
+        <h2 class="riyyan_section_title">Keunggulan Transaksi di Garage77</h2>
+        <p class="riyyan_section_sub">Jual beli mobil bekas yang jujur apa adanya tanpa drama biaya administrasi kredit.</p>
+
+        <div class="riyyan_grid_3">
+            <div class="riyyan_card">
+                <div class="riyyan_card_body">
+                    <span class="riyyan_badge">100% Cash Transparan</span>
+                    <h3 class="riyyan_card_title">Tanpa Biaya Tersembunyi</h3>
+                    <p class="riyyan_meta">Harga yang disepakati saat negosiasi adalah harga final. Tidak ada potongan admin atau kewajiban asuransi.</p>
+                </div>
+            </div>
+            <div class="riyyan_card">
+                <div class="riyyan_card_body">
+                    <span class="riyyan_badge">Transparansi Kondisi</span>
+                    <h3 class="riyyan_card_title">Foto Minus Apa Adanya</h3>
+                    <p class="riyyan_meta">Kami mencantumkan kondisi minus pemakaian di setiap halaman unit agar Anda tidak kecewa saat datang ke Manonjaya.</p>
+                </div>
+            </div>
+            <div class="riyyan_card">
+                <div class="riyyan_card_body">
+                    <span class="riyyan_badge">Testimoni Pembeli</span>
+                    <h3 class="riyyan_card_title">"Proses 1 Jam BPKB Langsung Bawa"</h3>
+                    <p class="riyyan_meta">"Cek unit ditemani mekanik pribadi, nego cocok, transfer, BPKB & faktur langsung diserahkan di tempat." — Kang Dedi, Ciamis.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <a href="https://wa.me/6281990601056?text=Halo%20Garage77,%20saya%20ingin%20tanya%20stok%20mobil" class="riyyan_float_wa" target="_blank">WhatsApp Garage77</a>
+
+    <footer id="riyyan_footer">
+        <p>&copy; 2026 <strong>Garage77</strong> — Jln. Manonjaya, Kab. Tasikmalaya | Riyyan Miftahurrohmat</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

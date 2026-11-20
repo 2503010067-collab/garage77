@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #1f2937;
+    line-height: 1.65;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#riyyan_header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 16px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.riyyan_nav_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.riyyan_logo {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: #111827;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
+
+.riyyan_logo span {
+    color: #6b7280;
+    font-weight: 500;
+}
+
+#riyyan_nav_list {
+    display: flex;
+    list-style: none;
+    gap: 6px;
+}
+
+.riyyan_nav_item {
+    color: #4b5563;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 7px 11px;
+    border-radius: 6px;
+    font-size: 0.88rem;
+    transition: 0.2s;
+}
+
+.riyyan_nav_item:hover {
+    background-color: #f3f4f6;
+    color: #111827;
+}
+
+.riyyan_aktif {
+    background-color: #1f2937;
+    color: #ffffff !important;
+}
+
+#riyyan_menu_btn {
+    display: none;
+    background: #f9fafb;
+    border: 1px solid #d1d5db;
+    color: #1f2937;
+    font-size: 1.3rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#riyyan_hero {
+    background: linear-gradient(rgba(17, 24, 39, 0.78), rgba(17, 24, 39, 0.85)), url('https://unsplash.com') center/cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 95px 20px;
+}
+
+.riyyan_hero_title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.riyyan_hero_desc {
+    font-size: 1.05rem;
+    color: #e5e7eb;
+    max-width: 680px;
+    margin: 0 auto 30px auto;
+}
+
+.riyyan_search_box {
+    max-width: 620px;
+    margin: 0 auto;
+    display: flex;
+    background: #ffffff;
+    padding: 6px;
+    border-radius: 8px;
+    gap: 6px;
+}
+
+.riyyan_search_input {
+    flex: 1;
+    border: none;
+    padding: 12px 14px;
+    font-size: 0.95rem;
+    outline: none;
+    color: #1f2937;
+}
+
+.riyyan_container {
+    max-width: 1160px;
+    margin: 45px auto;
+    padding: 0 20px;
+    flex: 1;
+    width: 100%;
+}
+
+.riyyan_section_title {
+    text-align: center;
+    font-size: 1.9rem;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.riyyan_section_sub {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 35px;
+    font-size: 0.98rem;
+}
+
+.riyyan_btn {
+    display: inline-block;
+    background-color: #1f2937;
+    color: #ffffff;
+    padding: 11px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    border: 1px solid #1f2937;
+    cursor: pointer;
+    font-size: 0.92rem;
+    transition: 0.2s;
+    text-align: center;
+}
+
+.riyyan_btn:hover {
+    background-color: #374151;
+}
+
+.riyyan_btn_light {
+    background-color: #ffffff;
+    color: #1f2937;
+    border: 1px solid #d1d5db;
+}
+
+.riyyan_btn_light:hover {
+    background-color: #f3f4f6;
+}
+
+.riyyan_grid_3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 26px;
+}
+
+.riyyan_grid_2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 30px;
+}
+
+.riyyan_card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    display: flex;
+    flex-direction: column;
+    transition: 0.25s;
+}
+
+.riyyan_card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.06);
+}
+
+.riyyan_card_img {
+    width: 100%;
+    height: 205px;
+    object-fit: cover;
+    background-color: #f3f4f6;
+}
+
+.riyyan_card_body {
+    padding: 22px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.riyyan_card_title {
+    font-size: 1.2rem;
+    color: #111827;
+    margin-bottom: 6px;
+}
+
+.riyyan_meta {
+    font-size: 0.88rem;
+    color: #6b7280;
+    margin-bottom: 12px;
+}
+
+.riyyan_price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 10px 0 14px 0;
+}
+
+.riyyan_badge {
+    display: inline-block;
+    background-color: #f3f4f6;
+    color: #374151;
+    border: 1px solid #e5e7eb;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+.riyyan_filter_bar {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.riyyan_form_box {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.riyyan_field {
+    margin-bottom: 18px;
+}
+
+.riyyan_label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #374151;
+    margin-bottom: 6px;
+}
+
+.riyyan_input, .riyyan_select, .riyyan_textarea {
+    width: 100%;
+    padding: 11px 13px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #1f2937;
+    font-size: 0.94rem;
+}
+
+.riyyan_input:focus, .riyyan_select:focus, .riyyan_textarea:focus {
+    outline: none;
+    border-color: #1f2937;
+}
+
+.riyyan_gallery_tabs {
+    display: flex;
+    gap: 8px;
+    margin: 14px 0;
+    flex-wrap: wrap;
+}
+
+.riyyan_tab_btn {
+    padding: 7px 14px;
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+    color: #374151;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.riyyan_tab_btn.riyyan_tab_aktif {
+    background: #1f2937;
+    color: #ffffff;
+    border-color: #1f2937;
+}
+
+.riyyan_detail_img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.riyyan_check_list {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.riyyan_check_list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.94rem;
+    color: #374151;
+}
+
+.riyyan_faq_item {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.riyyan_faq_q {
+    width: 100%;
+    text-align: left;
+    padding: 16px 20px;
+    background-color: #f9fafb;
+    border: none;
+    font-weight: 600;
+    font-size: 0.98rem;
+    color: #111827;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.riyyan_faq_a {
+    padding: 16px 20px;
+    background-color: #ffffff;
+    color: #4b5563;
+    display: none;
+    border-top: 1px solid #e5e7eb;
+    font-size: 0.94rem;
+}
+
+.riyyan_notif {
+    display: none;
+    margin-top: 18px;
+    padding: 15px;
+    background-color: #f3f4f6;
+    border-left: 4px solid #1f2937;
+    color: #111827;
+    font-size: 0.94rem;
+}
+
+.riyyan_float_wa {
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    background-color: #1f2937;
+    color: #ffffff;
+    padding: 12px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+    z-index: 999;
+}
+
+.riyyan_float_wa:hover {
+    background-color: #374151;
+}
+
+#riyyan_footer {
+    background-color: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+    padding: 26px 20px;
+    margin-top: 60px;
+    color: #6b7280;
+    font-size: 0.88rem;
+}
+
+@media screen and (max-width: 920px) {
+    #riyyan_menu_btn {
+        display: block;
+    }
+
+    #riyyan_nav_list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff;
+        border-bottom: 1px solid #e5e7eb;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        padding: 15px 5%;
+    }
+
+    #riyyan_nav_list.riyyan_show_nav {
+        display: flex;
+    }
+
+    .riyyan_hero_title {
+        font-size: 1.9rem;
+    }
+
+    .riyyan_search_box {
+        flex-direction: column;
+    }
+
+    .riyyan_detail_img {
+        height: 240px;
+    }
+}

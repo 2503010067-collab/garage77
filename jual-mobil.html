@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jual Mobil Anda Secara Tunai - Garage77</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="riyyan_header">
+        <div class="riyyan_nav_wrap">
+            <a href="index.html" class="riyyan_logo">GARAGE<span>77</span></a>
+            <button id="riyyan_menu_btn">&#9776;</button>
+            <ul id="riyyan_nav_list">
+                <li><a href="index.html" class="riyyan_nav_item">Beranda</a></li>
+                <li><a href="katalog.html" class="riyyan_nav_item">Stok Mobil</a></li>
+                <li><a href="detail.html" class="riyyan_nav_item">Detail Unit</a></li>
+                <li><a href="booking.html" class="riyyan_nav_item">Test Drive</a></li>
+                <li><a href="jual-mobil.html" class="riyyan_nav_item riyyan_aktif">Jual Mobil</a></li>
+                <li><a href="terjual.html" class="riyyan_nav_item">Terjual</a></li>
+                <li><a href="faq.html" class="riyyan_nav_item">Cara Beli & FAQ</a></li>
+                <li><a href="contact.html" class="riyyan_nav_item">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="riyyan_container">
+        <h2 class="riyyan_section_title">Jual Mobil Anda ke Garage77</h2>
+        <p class="riyyan_section_sub">Kami menerima pembelian tunai (jual putus) maupun titip jual dengan pembayaran langsung cair di tempat.</p>
+
+        <div class="riyyan_grid_2">
+            <div class="riyyan_form_box">
+                <form id="riyyan_jual_form">
+                    <div class="riyyan_field">
+                        <label class="riyyan_label">Nama Pemilik Mobil</label>
+                        <input type="text" id="riyyan_jual_nama" class="riyyan_input" placeholder="Masukkan nama Anda" required>
+                    </div>
+                    <div class="riyyan_field">
+                        <label class="riyyan_label">Skema Penjualan</label>
+                        <select id="riyyan_jual_tipe" class="riyyan_select">
+                            <option value="Jual Putus (Dibeli Langsung Cash oleh Garage77)">Jual Putus (Dibeli Langsung Cash oleh Garage77)</option>
+                            <option value="Titip Jual di Showroom Garage77">Titip Jual di Showroom Garage77</option>
+                        </select>
+                    </div>
+                    <div class="riyyan_field">
+                        <label class="riyyan_label">Merek, Tipe & Tahun Mobil</label>
+                        <input type="text" id="riyyan_jual_mobil" class="riyyan_input" placeholder="Contoh: Honda Jazz RS 2014 Manual" required>
+                    </div>
+                    <div class="riyyan_field">
+                        <label class="riyyan_label">Kondisi Mobil & Status Pajak</label>
+                        <textarea id="riyyan_jual_kondisi" class="riyyan_textarea" rows="3" placeholder="Contoh: Plat Z Tasikmalaya, pajak hidup, BPKB tangan pertama, mesin sehat..." required></textarea>
+                    </div>
+                    <div class="riyyan_field">
+                        <label class="riyyan_label">Harga yang Diharapkan (Rp)</label>
+                        <input type="text" id="riyyan_jual_harga" class="riyyan_input" placeholder="Contoh: 135.000.000" required>
+                    </div>
+                    <button type="submit" class="riyyan_btn">Kirim Penawaran via WhatsApp</button>
+                </form>
+            </div>
+
+            <div class="riyyan_card">
+                <div class="riyyan_card_body">
+                    <div>
+                        <span class="riyyan_badge">Proses Cepat</span>
+                        <h3 class="riyyan_card_title">Syarat Mobil yang Kami Terima</h3>
+                        <ul class="riyyan_check_list">
+                            <li>&#10003; BPKB, STNK, dan Faktur asli lengkap (bukan unit bermasalah/leasing).</li>
+                            <li>&#10003; Bebas bekas tabrakan berat struktur rangka dan bebas banjir.</li>
+                            <li>&#10003; Nomor rangka dan nomor mesin sesuai dokumen fisik.</li>
+                            <li>&#10003; Tim kami siap survei ke rumah Anda di wilayah Tasikmalaya dan sekitarnya.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="riyyan_footer">
+        <p>&copy; 2026 <strong>Garage77</strong> — Jln. Manonjaya, Kab. Tasikmalaya | Riyyan Miftahurrohmat</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

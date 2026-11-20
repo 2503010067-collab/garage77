@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stok Mobil Ready - Garage77</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="riyyan_header">
+        <div class="riyyan_nav_wrap">
+            <a href="index.html" class="riyyan_logo">GARAGE<span>77</span></a>
+            <button id="riyyan_menu_btn">&#9776;</button>
+            <ul id="riyyan_nav_list">
+                <li><a href="index.html" class="riyyan_nav_item">Beranda</a></li>
+                <li><a href="katalog.html" class="riyyan_nav_item riyyan_aktif">Stok Mobil</a></li>
+                <li><a href="detail.html" class="riyyan_nav_item">Detail Unit</a></li>
+                <li><a href="booking.html" class="riyyan_nav_item">Test Drive</a></li>
+                <li><a href="jual-mobil.html" class="riyyan_nav_item">Jual Mobil</a></li>
+                <li><a href="terjual.html" class="riyyan_nav_item">Terjual</a></li>
+                <li><a href="faq.html" class="riyyan_nav_item">Cara Beli & FAQ</a></li>
+                <li><a href="contact.html" class="riyyan_nav_item">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="riyyan_container">
+        <h2 class="riyyan_section_title">Katalog Stok Mobil Ready</h2>
+        <p class="riyyan_section_sub">Seluruh unit siap cek fisik di showroom Jln. Manonjaya, Kab. Tasikmalaya.</p>
+
+        <div class="riyyan_filter_bar">
+            <div>
+                <label class="riyyan_label">Cari Nama / Tahun</label>
+                <input type="text" id="riyyan_filter_nama" class="riyyan_input" placeholder="Ketik nama mobil...">
+            </div>
+            <div>
+                <label class="riyyan_label">Merek</label>
+                <select id="riyyan_filter_merek" class="riyyan_select">
+                    <option value="semua">Semua Merek</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Suzuki">Suzuki</option>
+                </select>
+            </div>
+            <div>
+                <label class="riyyan_label">Transmisi</label>
+                <select id="riyyan_filter_transmisi" class="riyyan_select">
+                    <option value="semua">Semua Transmisi</option>
+                    <option value="Manual">Manual</option>
+                    <option value="Automatic">Automatic</option>
+                </select>
+            </div>
+            <div>
+                <label class="riyyan_label">Rentang Harga Cash</label>
+                <select id="riyyan_filter_harga" class="riyyan_select">
+                    <option value="999999999">Semua Harga</option>
+                    <option value="90000000">Di bawah Rp 90 Juta</option>
+                    <option value="170000000">Di bawah Rp 170 Juta</option>
+                    <option value="250000000">Di bawah Rp 250 Juta</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="riyyan_katalog_list" class="riyyan_grid_3"></div>
+    </main>
+
+    <a href="https://wa.me" class="riyyan_float_wa" target="_blank">WhatsApp Garage77</a>
+
+    <footer id="riyyan_footer">
+        <p>&copy; 2026 <strong>Garage77</strong> — Jln. Manonjaya, Kab. Tasikmalaya | Riyyan Miftahurrohmat</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

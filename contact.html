@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami & Kontak - Garage77</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="riyyan_header">
+        <div class="riyyan_nav_wrap">
+            <a href="index.html" class="riyyan_logo">GARAGE<span>77</span></a>
+            <button id="riyyan_menu_btn">&#9776;</button>
+            <ul id="riyyan_nav_list">
+                <li><a href="index.html" class="riyyan_nav_item">Beranda</a></li>
+                <li><a href="katalog.html" class="riyyan_nav_item">Stok Mobil</a></li>
+                <li><a href="detail.html" class="riyyan_nav_item">Detail Unit</a></li>
+                <li><a href="booking.html" class="riyyan_nav_item">Test Drive</a></li>
+                <li><a href="jual-mobil.html" class="riyyan_nav_item">Jual Mobil</a></li>
+                <li><a href="terjual.html" class="riyyan_nav_item">Terjual</a></li>
+                <li><a href="faq.html" class="riyyan_nav_item">Cara Beli & FAQ</a></li>
+                <li><a href="contact.html" class="riyyan_nav_item riyyan_aktif">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="riyyan_container">
+        <h2 class="riyyan_section_title">Tentang Garage77 & Kontak</h2>
+        <p class="riyyan_section_sub">Showroom spesialis jual beli mobil bekas tunai berkualitas di Kabupaten Tasikmalaya.</p>
+
+        <div class="riyyan_grid_2">
+            <div class="riyyan_form_box">
+                <h3 class="riyyan_card_title" style="margin-bottom: 15px;">Kirim Pesan ke Pemilik Showroom</h3>
+                <form id="riyyan_contact_form">
+                    <div class="riyyan_field">
+                        <label class="riyyan_label" for="riyyan_cnt_nama">Nama Lengkap</label>
+                        <input type="text" id="riyyan_cnt_nama" class="riyyan_input" placeholder="Masukkan nama Anda" required>
+                    </div>
+                    <div class="riyyan_field">
+                        <label class="riyyan_label" for="riyyan_cnt_kontak">Email atau Nomor WhatsApp</label>
+                        <input type="text" id="riyyan_cnt_kontak" class="riyyan_input" placeholder="Contoh: nama@email.com / 0812..." required>
+                    </div>
+                    <div class="riyyan_field">
+                        <label class="riyyan_label" for="riyyan_cnt_subjek">Subjek</label>
+                        <input type="text" id="riyyan_cnt_subjek" class="riyyan_input" placeholder="Contoh: Tanya Ketersediaan Unit" required>
+                    </div>
+                    <div class="riyyan_field">
+                        <label class="riyyan_label" for="riyyan_cnt_pesan">Isi Pesan</label>
+                        <textarea id="riyyan_cnt_pesan" class="riyyan_textarea" rows="4" placeholder="Tuliskan pertanyaan atau pesan Anda..." required></textarea>
+                    </div>
+                    <button type="submit" class="riyyan_btn">Kirim Pesan</button>
+                </form>
+                <div id="riyyan_cnt_notif" class="riyyan_notif"></div>
+            </div>
+
+            <div class="riyyan_card">
+                <div class="riyyan_card_body">
+                    <div>
+                        <span class="riyyan_badge">Profil & Lokasi</span>
+                        <h3 class="riyyan_card_title">Garage77 Tasikmalaya</h3>
+                        <p class="riyyan_meta">Berdiri sebagai ruang transaksi mobil bekas yang mengedepankan kejujuran kondisi unit, keabsahan surat-surat, serta kemudahan negosiasi tunai tanpa perantara.</p>
+                        <ul class="riyyan_check_list">
+                            <li><strong>Alamat:</strong> Jln. Manonjaya, Kab. Tasikmalaya, Jawa Barat</li>
+                            <li><strong>WhatsApp Resmi:</strong> 0819-9060-1056</li>
+                            <li><strong>Email:</strong> aldiuyehopat@gmail.com</li>
+                            <li><strong>Jam Buka:</strong> Senin – Minggu, 08.30 – 17.30 WIB</li>
+                            <li><strong>Media Sosial:</strong> Instagram @garage77.tasik</li>
+                        </ul>
+                        <div style="margin-top: 18px; display: flex; gap: 10px; flex-wrap: wrap;">
+                            <a href="https://google.com" target="_blank" class="riyyan_btn">Buka Lokasi di Google Maps</a>
+                            <a href="https://wa.me" target="_blank" class="riyyan_btn riyyan_btn_light">Chat WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="riyyan_footer">
+        <p>&copy; 2026 <strong>Garage77</strong> — Jln. Manonjaya, Kab. Tasikmalaya | Riyyan Miftahurrohmat</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

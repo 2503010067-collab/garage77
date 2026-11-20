@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Test Drive & Inspeksi - Garage77</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="riyyan_header">
+        <div class="riyyan_nav_wrap">
+            <a href="index.html" class="riyyan_logo">GARAGE<span>77</span></a>
+            <button id="riyyan_menu_btn">&#9776;</button>
+            <ul id="riyyan_nav_list">
+                <li><a href="index.html" class="riyyan_nav_item">Beranda</a></li>
+                <li><a href="katalog.html" class="riyyan_nav_item">Stok Mobil</a></li>
+                <li><a href="detail.html" class="riyyan_nav_item">Detail Unit</a></li>
+                <li><a href="booking.html" class="riyyan_nav_item riyyan_aktif">Test Drive</a></li>
+                <li><a href="jual-mobil.html" class="riyyan_nav_item">Jual Mobil</a></li>
+                <li><a href="terjual.html" class="riyyan_nav_item">Terjual</a></li>
+                <li><a href="faq.html" class="riyyan_nav_item">Cara Beli & FAQ</a></li>
+                <li><a href="contact.html" class="riyyan_nav_item">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="riyyan_container">
+        <h2 class="riyyan_section_title">Jadwalkan Test Drive & Inspeksi</h2>
+        <p class="riyyan_section_sub">Anda dipersilakan membawa mekanik kepercayaan atau jasa inspektor independen saat mengecek unit di showroom kami.</p>
+
+        <div class="riyyan_grid_2">
+            <div class="riyyan_form_box">
+                <form id="riyyan_booking_form">
+                    <div class="riyyan_field">
+                        <label class="riyyan_label">Nama Calon Pembeli</label>
+                        <input type="text" id="riyyan_book_nama" class="riyyan_input" placeholder="Masukkan nama lengkap" required>
+                    </div>
+                    <div class="riyyan_field">
+                        <label class="riyyan_label">Pilih Unit yang Akan Dicoba</label>
+                        <select id="riyyan_book_unit" class="riyyan_select">
+                            <option value="Toyota Great Corolla 1.6 SEG 1995">Toyota Great Corolla 1.6 SEG 1995</option>
+                            <option value="Suzuki Swift ST 1.5 2008">Suzuki Swift ST 1.5 2008</option>
+                            <option value="Honda HR-V 1.8 Prestige Sunroof 2016">Honda HR-V 1.8 Prestige Sunroof 2016</option>
+                            <option value="Honda Civic FB 2.0 AT 2013">Honda Civic FB 2.0 AT 2013</option>
+                            <option value="Toyota Camry 2.4 V XV30 2005">Toyota Camry 2.4 V XV30 2005</option>
+                        </select>
+                    </div>
+                    <div class="riyyan_field">
+                        <label class="riyyan_label">Tanggal Kedatangan</label>
+                        <input type="date" id="riyyan_book_tanggal" class="riyyan_input" required>
+                    </div>
+                    <div class="riyyan_field">
+                        <label class="riyyan_label">Jam Kunjungan</label>
+                        <input type="time" id="riyyan_book_jam" class="riyyan_input" value="10:00" required>
+                    </div>
+                    <div class="riyyan_field">
+                        <label class="riyyan_label">Opsi Pengecekan</label>
+                        <select id="riyyan_book_inspektor" class="riyyan_select">
+                            <option value="Cek Unit & Test Drive Sendiri">Cek Unit & Test Drive Sendiri</option>
+                            <option value="Membawa Mekanik Pribadi / Inspektor Independen">Membawa Mekanik Pribadi / Inspektor Independen</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="riyyan_btn">Konfirmasi Jadwal via WhatsApp</button>
+                </form>
+            </div>
+
+            <div class="riyyan_card">
+                <div class="riyyan_card_body">
+                    <div>
+                        <span class="riyyan_badge">Lokasi Pengecekan</span>
+                        <h3 class="riyyan_card_title">Showroom Garage77 Tasikmalaya</h3>
+                        <p class="riyyan_meta"><strong>Alamat:</strong> Jln. Manonjaya, Kab. Tasikmalaya, Jawa Barat.</p>
+                        <p class="riyyan_meta"><strong>Ketentuan Test Drive:</strong></p>
+                        <ul class="riyyan_check_list">
+                            <li>&#10003; Wajib membawa SIM A yang masih berlaku.</li>
+                            <li>&#10003; Bebas mengecek kolong, ketebalan cat, dan scan ECU.</li>
+                            <li>&#10003; Bebas mencocokkan nomor rangka, nomor mesin, dan BPKB asli.</li>
+                            <li>&#10003; Tidak ada biaya booking atau uang tanda jadi di muka.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="riyyan_footer">
+        <p>&copy; 2026 <strong>Garage77</strong> — Jln. Manonjaya, Kab. Tasikmalaya | Riyyan Miftahurrohmat</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
